@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 
 :root{
   --color-bg-div:  #cedeff;
@@ -9,14 +9,19 @@ body{
   }
 #apresentacao{
    background-color:var(--color-bg-div);
+   
+}
+
+.container-apresentacao{
+  text-align: center;
+  margin: 15px 20px 12px 30px;
 }
 
 #imgCurriculo{
-  width: 50%;
-  height: 45%;
+  width: 12%;
+  height: 12%;
   border-radius: 50%;
   box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8);
- 
 }
 
 #sobre{
@@ -54,17 +59,19 @@ th, td {
 tr:nth-child(even) {
   background-color: hsl(220, 100%, 83%);
 } 
+
+#menu a, #formacao a, #enderecoContato a{
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+ } 
+ 
 /* 
 hr{
   width: 80%;
   
 }
 
-#menu a, #formacao a, #enderecoContato a{
- color: #fff;
- font-size: 20px;
- text-decoration: none;
-}
 
 #menu a:hover, #formacao a:hover, #enderecoContato a:hover{
   color:   #dbe7ff;
