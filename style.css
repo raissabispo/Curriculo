@@ -1,9 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root{
+  --color-bg-div:  #cedeff;
+}
 body{
-  text-align: center;
-  background-color: rgb(210, 255, 255);
+    background-color:#8EACCD;
+    color: #fff;
+  }
+#apresentacao{
+   background-color:var(--color-bg-div);
+}
+
+#imgCurriculo{
+  width: 50%;
+  height: 45%;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8);
+ 
+}
+
+#sobre{
+  margin-top: 20px
+}
+
+.margin{
+  padding: 25px;
+}
+
+#skills {
+  background-color: var(--color-bg-div);
+}
+
+.topBcgSobre{
+  background-color: #b8f4ff;
+  width: 8%;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: hsl(220, 100%, 83%);
+} 
+/* 
+hr{
+  width: 80%;
+  
+}
+
+#menu a, #formacao a, #enderecoContato a{
+ color: #fff;
+ font-size: 20px;
+ text-decoration: none;
+}
+
+#menu a:hover, #formacao a:hover, #enderecoContato a:hover{
+  color:   #dbe7ff;
 }
 
 iframe{
-    text-align: center;
-    background-color: aliceblue;
+   width: 50%;
+   height: 300px;
+   border: none;
 }
+
+
+ 
+
+/* #imgIcon{
+  height: 30px;
+  width: 30px;
+  border-radius: none;
+
+}
+
+#rodape span{
+font-size: 10px;
+} */
