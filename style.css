@@ -6,10 +6,11 @@
 body{
     background-color:#8EACCD;
     color: #fff;
+   
   }
 #apresentacao{
    background-color:var(--color-bg-div);
-   
+   padding-top: 45px ;
 }
 
 .container-apresentacao{
@@ -25,15 +26,22 @@ body{
 }
 
 #sobre{
-  margin-top: 20px
+  margin-top: 40px;
+  scroll-margin-top: 80px;
 }
 
 .margin{
   padding: 25px;
+  
 }
 
 #skills {
   background-color: var(--color-bg-div);
+  scroll-margin-top: 80px;
+}
+
+#formacao{
+  scroll-margin-top: 80px;
 }
 
 .topBcgSobre{
@@ -59,32 +67,34 @@ th, td {
 tr:nth-child(even) {
   background-color: hsl(220, 100%, 83%);
 } 
+#menu {
+  background-color: #b8f4ff;
+}
+#menu a{
+  color: #8EACCD;
+  text-decoration: none;
+  font-size: 20px
+}
 
-#menu a, #formacao a, #enderecoContato a{
+#formacao a, #enderecoContato a{
   color: #fff;
   font-size: 20px;
   text-decoration: none;
  } 
- 
-/* 
-hr{
-  width: 80%;
-  
+
+ #enderecoContato{
+  scroll-margin-top: 80px;
+ }
+
+ #menu a:hover, #formacao a:hover, #enderecoContato a:hover{
+  color: #202020;
 }
 
-
-#menu a:hover, #formacao a:hover, #enderecoContato a:hover{
-  color:   #dbe7ff;
-}
-
-iframe{
-   width: 50%;
-   height: 300px;
-   border: none;
-}
+#rodape span{
+  font-size: 10px;
+  }
 
 
- 
 
 /* #imgIcon{
   height: 30px;
