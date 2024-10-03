@@ -1,5 +1,4 @@
 
-
 :root{
   --color-bg-div:  #cedeff;
 }
@@ -35,7 +34,7 @@ body{
   
 }
 
-#skills {
+#skills, #experiencia{
   background-color: var(--color-bg-div);
   scroll-margin-top: 80px;
 }
@@ -90,19 +89,9 @@ tr:nth-child(even) {
   color: #202020;
 }
 
+#rodape{
+  text-align: center;
+}
 #rodape span{
   font-size: 10px;
-  }
-
-
-
-/* #imgIcon{
-  height: 30px;
-  width: 30px;
-  border-radius: none;
-
-}
-
-#rodape span{
-font-size: 10px;
-} */
+}  
