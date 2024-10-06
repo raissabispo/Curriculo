@@ -1,15 +1,16 @@
-
 :root{
   --color-bg-div:  #cedeff;
 }
+
 body{
     background-color:#8EACCD;
     color: #fff;
-   
-  }
+}
+
 #apresentacao{
-   background-color:var(--color-bg-div);
-   padding-top: 45px ;
+  color: #8EACCD;
+   background-color: var(--color-bg-div);
+   padding-top: 45px;
 }
 
 .container-apresentacao{
@@ -31,7 +32,6 @@ body{
 
 .margin{
   padding: 25px;
-  
 }
 
 #skills, #experiencia{
@@ -55,7 +55,6 @@ body{
 table {
   border-collapse: collapse;
   width: 50%;
-  
 }
 
 th, td {
@@ -65,33 +64,73 @@ th, td {
 
 tr:nth-child(even) {
   background-color: hsl(220, 100%, 83%);
-} 
+}
+
 #menu {
   background-color: #b8f4ff;
 }
+
 #menu a{
   color: #8EACCD;
   text-decoration: none;
-  font-size: 20px
+  font-size: 20px;
 }
 
 #formacao a, #enderecoContato a{
   color: #fff;
   font-size: 20px;
   text-decoration: none;
- } 
-
- #enderecoContato{
-  scroll-margin-top: 80px;
- }
-
- #menu a:hover, #formacao a:hover, #enderecoContato a:hover{
-  color: #202020;
 }
 
+#enderecoContato{
+  scroll-margin-top: 80px;
+}
+
+#menu a:hover, #formacao a:hover, #enderecoContato a:hover{
+  color: #719ece
+}
+#skills, #experiencia{
+  color: #74a1d1;
+  font-weight: 500;
+}
 #rodape{
   text-align: center;
 }
+
 #rodape span{
   font-size: 10px;
-}  
+}
+
+
+#Formulario{
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 20px;
+}
+
+#Formulario .form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px; 
+}
+
+#Formulario label {
+  width: 20%; 
+}
+
+#Formulario input, .form-group textarea{
+  width: 75%;
+  margin-bottom: 10px; 
+}
+
+
+#Formulario fieldset {
+  border: 2px solid #8EACCD; /* Cor e espessura da borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 15px; /* Espaçamento interno */
+  margin-bottom: 20px; /* Espaçamento abaixo do fieldset */
+  background-color: var(--color-bg-div); 
+  color: #8EACCD;
+  font-weight: 500;
+}
