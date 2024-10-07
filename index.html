@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
     <title>Currículo | Raissa Vitória</title>
 </head>
@@ -18,6 +19,7 @@
       <a class="menuRaissa mx-2"href="#skills">Minhas Skills</a>
       <a class="menuRaissa mx-2" href="#formacao">Formação</a>
       <a class="menuRaissa mx-2" href="#experiencia">Experiência</a>
+      <a class="menuRaissa mx-2"href="#Formulario">Formulário</a>
       <a class="menuRaissa mx-2"href="#enderecoContato">Endereço e Contato</a>
 
     </div>
@@ -26,7 +28,6 @@
     <div id="apresentacao">
         <div class="row  align-items-center">
           <div class="col-15 container-apresentacao text-align-center">
-            <h1>Curriculo pessoal</h1>
             <h1>Raissa Vitória Pereira Bispo</h1>
             <h3>(Analista de sistemas)</h3>
             <img src="images/image.jpg" class="opacity-75" alt="Foto de Raissa" id="imgCurriculo">
@@ -115,21 +116,12 @@
       </div>
      </div>
 
-    <div id="enderecoContato">
-     <div class="container-sm margin">
-        <h2>Endereço/Contato:</h2>
-        <address>
-          Desenvolvido: <a href="mailton:raissavit59@gmail.com" target="_blank"> <b>Raissa Vitória</b></a> <br>
-          Visite: <a href="https://github.com/raissabispo" target="_blank"><b>Meu portfólio</b></a> <br>
-     <br>Recife,PE - Brasil
-        </address>
-      </div>
-      </div>
-      <div id="Formulario" class="container-sm">
+   
+      <div id="Formulario" class="container-sm margin">
         <form>
           <fieldset>
               <legend>Formulário de Freelance</legend>
-              
+          
               <div class="form-group">
                   <label for="nome">Nome:</label>
                   <input type="text" id="nome" name="nome" class="form-control" placeholder="Insira seu nome"required>
@@ -157,11 +149,20 @@
 
           </fieldset>
       
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-primary"onclick="mudarNome()">Enviar</button>
           <button type="reset" class="btn btn-secondary">Limpar</button>
       </form>
   </div>
-      
+  <div id="enderecoContato">
+    <div class="container-sm margin">
+       <h2>Endereço/Contato:</h2>
+       <address>
+         Desenvolvido: <a href="mailton:raissavit59@gmail.com" target="_blank"> <b>Raissa Vitória</b></a> <br>
+         Visite: <a href="https://github.com/raissabispo" target="_blank"><b>Meu portfólio</b></a> <br>
+    <br>Recife,PE - Brasil
+       </address>
+     </div>
+     </div>
      
       <footer  class="text-align-center" id="rodape">
         <!-- <a href="https://github.com/raissabispo" target="_blank"><img src="images/github.png" alt="" id="imgIcon"></a>

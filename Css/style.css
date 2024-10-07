@@ -106,6 +106,8 @@ tr:nth-child(even) {
   display: flex;
   flex-direction: column; 
   margin-bottom: 20px;
+  scroll-margin-top: 80px;
+  padding: 25px;
 }
 
 #Formulario .form-group {
