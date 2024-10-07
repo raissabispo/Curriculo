@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+img{
+  width: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8);
+}
+.navbar {
+  background-color: #ffffff;
+}
+.navbar-nav .nav-link {
+  color: #000000;
+  font-size: 1.1rem;
+}
+
+
+.navbar-nav .nav-item {
+  padding: 0 .5rem;
+}
+section.hero {
+  background-color: #ecf2ff;
+  padding-top: 80px
+ 
+}
+
+section [class^="container"] {
+  padding: 4rem 2rem;
+}
+
+section:nth-child(2n) {
+  background-color: #ecf2ff;
+}
+
+section:not(:first-of-type) {
+  text-align: center;
+}
+
+section.skills i {
+  font-size: 2rem;
+  margin: 1rem auto 0;
+  border: 2px solid #000000;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5a841;
+}
+
+section.testimonials .container {
+  width: 75%;
+}
+
+section.contact .social-media a {
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: all .3s;
+}
+a:not(.btn):hover {
+  color: #8dabff;
+}
+
+.navbar-nav .nav-link {
+  transition: all 0.5s;
+}
+.navbar-nav .nav-link:hover {
+  color: #91aeff;
+}
+
+
+ #formulario fieldset {
+  border: 2px solid #8EACCD; /* Cor e espessura da borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 15px; /* Espaçamento interno */
+  margin-bottom: 20px; /* Espaçamento abaixo do fieldset */
+  background-color: var(--color-bg-div); 
+  color: #8EACCD;
+  font-weight: 500;
+}
