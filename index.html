@@ -33,11 +33,11 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#contato">Contato</a>
+              <a class="nav-link" href="#formulario">Formulário</a>
             </li>
 
         </ul>
-        <a class="btn btn-outline-dark" href="#formulario">Formulário</a>
+        <a class="btn btn-outline-dark" href="#contato">Contato</a>
       </div>
     </div>
   </nav>
@@ -61,12 +61,7 @@
     <div class="container text-center">
       <h2 class="display-5 fw-bold mb-4">Sobre mim</h2>
      
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum est id pulvinar mollis. Nullam
-        rhoncus dignissim ipsum, ac pulvinar tellus sodales ut. Vestibulum tincidunt malesuada consectetur.
-        Nulla vel fermentum leo. Mauris rhoncus blandit justo, at congue dui rhoncus sit amet.</p>
-    <p>Proin molestie
-        sapien vel nulla accumsan, sit amet viverra metus ornare. Mauris iaculis ex vitae mollis pulvinar.
-        Phasellus fringilla neque sed ligula lacinia iaculis.</p>
+     <p>Me interessei pela área da programação em 2021, quando comecei o curso técnico de desenvolvimento de sistemas. Atualmente, estou cursando minha primeira graduação em análise e desenvolvimento de sistemas no Senac. Estou animada e contente por ter essa oportunidade de estudar e me especializar na área de tecnologia.</p>
     </div>
 
 </section>
@@ -184,6 +179,117 @@
   </div>
 </section>
 
+
+<section class="formulario" id="formulario">
+  <div class="container">
+    <h2 class="display-5 fw-bold mb-4">Formulário de Freelancer</h2>
+    <form id="freelancerForm" enctype="multipart/form-data">
+      <fieldset>
+        <legend class="mb-4">Formulário de Freelancer</legend>
+
+        <!-- Nome -->
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome*:</label>
+          <input type="text" id="nome" name="nome" class="form-control" placeholder="Insira seu nome" required>
+        </div>
+
+        <!-- Sobrenome -->
+        <div class="mb-3">
+          <label for="sobrenome" class="form-label">Sobrenome*:</label>
+          <input type="text" id="sobrenome" name="sobrenome" class="form-control" placeholder="Insira seu sobrenome" required>
+        </div>
+
+        <!-- Telefone -->
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone*:</label>
+          <input type="text" id="telefone" name="telefone" class="form-control" placeholder="(99) 99999-9999" required>
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail*:</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="email@dominio.com" required>
+        </div>
+
+        <!-- Mensagem -->
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem*:</label>
+          <textarea id="mensagem" name="mensagem" class="form-control" rows="4" placeholder="Informe o que deseja." required></textarea>
+        </div>
+
+        <!-- Língua -->
+        <div class="mb-3">
+          <label for="lingua" class="form-label">Língua*:</label>
+          <select id="lingua" name="lingua" class="form-select" required>
+            <option value="">Selecione uma língua</option>
+            <option value="en">Inglês</option>
+            <option value="es">Espanhol</option>
+            <option value="fr">Francês</option>
+            <option value="pt-br">Português (pt-br)</option>
+          </select>
+        </div>
+         <!-- Protótipo -->
+         <div class="mb-3">
+          <label for="prototipo" class="form-label">Protótipo (Requisitos)*:</label>
+          <input type="file" id="prototipo" name="prototipo" class="form-control" accept=".pdf,.doc,.docx,.jpeg,.jpg,.png" required>
+        </div>
+       <!-- Linguagens Preferidas -->
+       <div class="mb-3">
+        <label for="linguagens" class="form-label">Linguagens Preferidas*:</label>
+        <select id="linguagens" name="linguagens" class="form-select" multiple required>
+          <option value="java">Java</option>
+          <option value="c">C</option>
+          <option value="cpp">C++</option>
+          <option value="php">PHP</option>
+          <option value="python">Python</option>
+        </select>
+      </div>
+
+       <!-- Banco de Dados -->
+       <div class="mb-3">
+        <label class="form-label">Banco de Dados*:</label><br>
+        <input type="radio" id="mysql" name="banco" value="MySQL" required>
+        <label for="mysql">MySQL</label>
+        <input type="radio" id="postgresql" name="banco" value="PostgreSQL" required>
+        <label for="postgresql">PostgreSQL</label>
+        <input type="radio" id="mongodb" name="banco" value="MongoDB" required>
+        <label for="mongodb">MongoDB</label>
+      </div>
+
+      <!-- Turno para Reuniões -->
+      <div class="mb-3">
+        <label for="turno" class="form-label">Turno de preferência para reuniões*:</label>
+        <select id="turno" name="turno" class="form-select" required>
+          <option value="">Selecione um turno</option>
+          <option value="manha">Manhã</option>
+          <option value="tarde">Tarde</option>
+          <option value="noite">Noite</option>
+        </select>
+      </div>
+
+        <!-- Horário Sugerido -->
+        <div class="mb-3">
+          <label for="horario" class="form-label">Horário Sugerido*:</label>
+          <input type="time" id="horario" name="horario" class="form-control" required>
+        </div>
+
+          <!-- Data Prevista de Entrega -->
+          <div class="mb-3">
+            <label for="data" class="form-label">Data Prevista de Entrega*:</label>
+            <input type="date" id="data" name="data" class="form-control" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary" onclick="mudarNome()">Enviar</button>
+          <button type="reset" class="btn btn-secondary">Limpar</button>
+
+            </fieldset>
+
+           
+        </form>
+  </div>
+</section>
+
+
 <section class="contato" id="contato">
   <div class="container">
       <h2 class="display-5 fw-bold mb-4">Contato</h2>
@@ -204,47 +310,6 @@
             <a href="#"><i class="bi bi-telephone-fill"></i> (81) 987672998</a>
           </div>
       </div>
-  </div>
-</section>
-
-
-<section class="formulario" id="formulario">
-  <div class="container">
-    <h2 class="display-5 fw-bold mb-4">Formulário de Freelance</h2>
-  <form>
-            <fieldset>
-                <legend class="mb-4">Formulário de Freelance</legend>
-
-                <div class="mb-3">
-                    <label for="nome" class="form-label">Nome:</label>
-                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Insira seu nome" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="sobrenome" class="form-label">Sobrenome:</label>
-                    <input type="text" id="sobrenome" name="sobrenome" class="form-control" placeholder="Insira seu sobrenome" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="telefone" class="form-label">Telefone:</label>
-                    <input type="text" id="telefone" name="telefone" class="form-control" placeholder="(99) 99999-9999" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="Insira seu e-mail" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="mensagem" class="form-label">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="4" class="form-control" placeholder="Informe o que deseja." required></textarea>
-                </div>
-
-            </fieldset>
-
-            <button type="submit" class="btn btn-primary" onclick="mudarNome()">Enviar</button>
-            <button type="reset" class="btn btn-secondary">Limpar</button>
-        </form>
   </div>
 </section>
 <footer class="text-center p-3 bg-body-tertiary">
