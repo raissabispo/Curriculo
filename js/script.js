@@ -21,4 +21,8 @@ function enviar() {
       return false;
     }
     document.getElementById('mensagemEnviar').innerHTML = 'Formulário enviado com sucesso!';
+
+    setTimeout(function() {
+      document.getElementById('mensagemEnviar').innerHTML = '';
+  }, 5000);
     }
