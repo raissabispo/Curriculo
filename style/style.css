@@ -93,6 +93,6 @@ a:not(.btn):hover {
    font-size:20px;
 }
 
-b{
+label b{
   color: rgb(255, 73, 73);
 }
