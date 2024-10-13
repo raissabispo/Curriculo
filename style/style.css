@@ -93,6 +93,6 @@ a:not(.btn):hover {
    font-size:20px;
 }
 
-label b{
+#obrigatorio{
   color: rgb(255, 73, 73);
 }

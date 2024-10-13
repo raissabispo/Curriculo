@@ -185,23 +185,23 @@
       <fieldset>
         <legend class="mb-4">Formulário de Freelancer</legend>
         <div class="mb-3">
-          <label for="nome" class="form-label">Nome<b>*</b>:</label>
+          <label for="nome" class="form-label">Nome<b id="obrigatorio">*</b>:</label>
           <input type="text" id="nome" name="nome" class="form-control" placeholder="Insira seu nome" required>
         </div>
         <div class="mb-3">
-          <label for="sobrenome" class="form-label">Sobrenome<b>*</b>:</label>
+          <label for="sobrenome" class="form-label">Sobrenome<b id="obrigatorio">*</b>:</label>
           <input type="text" id="sobrenome" name="sobrenome" class="form-control" placeholder="Insira seu sobrenome" required>
         </div>
         <div class="mb-3">
-          <label for="telefone" class="form-label">Telefone<b>*</b>:</label>
+          <label for="telefone" class="form-label">Telefone<b id="obrigatorio">*</b>:</label>
           <input type="text" id="telefone" name="telefone" class="form-control" placeholder="(99) 99999-9999" required>
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">E-mail<b>*</b>:</label>
+          <label for="email" class="form-label">E-mail<b id="obrigatorio">*</b>:</label>
           <input type="email" id="email" name="email" class="form-control" placeholder="email@dominio.com" required>
         </div>
         <div class="mb-3">
-          <label for="mensagem" class="form-label">Mensagem<b>*</b>:</label>
+          <label for="mensagem" class="form-label">Mensagem<b id="obrigatorio">*</b>:</label>
           <textarea id="mensagem" name="mensagem" class="form-control" rows="4" placeholder="Informe o que deseja." required></textarea>
         </div>
         <div class="mb-3">
@@ -242,7 +242,7 @@
         <label for="outra">Outra</label>
       </div>
       <div class="mb-3">
-        <label for="turno" class="form-label">Turno de preferência para reuniões <b>*</b>:<br>
+        <label for="turno" class="form-label">Turno de preferência para reuniões <b id="obrigatorio">*</b>:<br>
        <input type="checkbox" id="manha" name="turno" value="Manhã">
       <label for="manha">Manhã</label><br>
 
@@ -257,7 +257,7 @@
           <input type="time" id="horario" name="horario" class="form-control" required>
         </div>
           <div class="mb-3">
-            <label for="data" class="form-label">Data Prevista de Entrega<b>*</b>:
+            <label for="data" class="form-label">Data Prevista de Entrega<b id="obrigatorio">*</b>:
             <input type="date" id="data" name="data" class="form-control" required>
           </div>
 
