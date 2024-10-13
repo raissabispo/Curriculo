@@ -67,7 +67,6 @@
   <div class="container">
       <h2 class="display-5 fw-bold mb-4">Skills</h2>
       <div class="row">
-        <!-- Primeira linha de skills -->
         <div class="col-sm-4 mb-4">
           <div class="card">
             <i class="bi bi-filetype-html"></i>
@@ -94,7 +93,6 @@
         </div>
       </div>
       
-      <!-- Segunda linha de skills -->
       <div class="row">
         <div class="col-sm-4 mb-4">
           <div class="card">
@@ -122,7 +120,6 @@
         </div>
       </div>
 
-      <!-- Terceira linha de skills -->
       <div class="row">
         <div class="col-sm-4 mb-4">
           <div class="card">
@@ -181,7 +178,7 @@
 <section class="formulario" id="formulario">
   <div class="container">
     <h2 class="display-5 fw-bold mb-4">Formulário de Freelancer</h2>
-    <form id="freelancerForm" enctype="multipart/form-data">
+    <form id="freelancerForm" enctype="multipart/form-data" class="form">
       <fieldset>
         <legend class="mb-4">Formulário de Freelancer</legend>
         <div class="mb-3">
@@ -206,7 +203,7 @@
         </div>
         <div class="mb-3">
           <label for="lingua" class="form-label">Língua:</label>
-          <select id="lingua" name="lingua" class="form-select" required>
+          <select id="lingua" name="lingua" class="form-select" >
             <option value="">Selecione uma língua</option>
             <option value="en">Inglês</option>
             <option value="es">Espanhol</option>
@@ -216,11 +213,11 @@
         </div>
          <div class="mb-3">
           <label for="prototipo" class="form-label">Protótipo (Requisitos):</label>
-          <input type="file" id="prototipo" name="prototipo" class="form-control" accept=".pdf,.doc,.docx,.jpeg,.jpg,.png" required>
+          <input type="file" id="prototipo" name="prototipo" class="form-control" accept=".pdf,.doc,.docx,.jpeg,.jpg,.png" >
         </div>
       <div class="mb-3">
         <label for="linguagens" class="form-label">Linguagens Preferidas:</label>
-        <select id="linguagens" name="linguagens" class="form-select" multiple required>
+        <select id="linguagens" name="linguagens" class="form-select" multiple>
           <option value="java">Java</option>
           <option value="c">C</option>
           <option value="cpp">C++</option>
@@ -230,38 +227,39 @@
       </div>
       <div class="mb-3">
         <label class="form-label">Banco de Dados:</label><br>
-        <input type="radio" id="mysql" name="banco" value="MySQL" required>
+        <input type="radio" id="mysql" name="banco" value="MySQL" >
         <label for="mysql">MySQL</label>
-        <input type="radio" id="postgresql" name="banco" value="PostgreSQL" required>
+        <input type="radio" id="postgresql" name="banco" value="PostgreSQL" >
         <label for="postgresql">PostgreSQL</label>
-        <input type="radio" id="mongodb" name="banco" value="MongoDB" required>
+        <input type="radio" id="mongodb" name="banco" value="MongoDB" >
         <label for="mongodb">MongoDB</label>
-        <input type="radio" id="N/A" name="banco" value="N/A" required>
+        <input type="radio" id="N/A" name="banco" value="N/A">
         <label for="N/A">N/A</label>
-        <input type="radio" id="outra" name="banco" value="outra" required>
+        <input type="radio" id="outra" name="banco" value="outra">
         <label for="outra">Outra</label>
       </div>
       <div class="mb-3">
         <label for="turno" class="form-label">Turno de preferência para reuniões <b id="obrigatorio">*</b>:<br>
-       <input type="checkbox" id="manha" name="turno" value="Manhã">
-      <label for="manha">Manhã</label><br>
+       <input type="checkbox" id="manha" name="turno" value="Manhã" >
+      <label for="manha">Manhã</label>
 
      <input type="checkbox" id="tarde" name="turno" value="Tarde">
-     <label for="tarde">Tarde</label><br>
+     <label for="tarde">Tarde</label>
 
-     <input type="checkbox" id="noite" name="turno" value="Noite">
-      <label for="noite">Noite</label>
+     <input type="checkbox" id="noite" name="turno" value="Noite" >
+<label for="noite">Noite</label>
+
       </div>
         <div class="mb-3">
           <label for="horario" class="form-label">Horário Sugerido:</label>
-          <input type="time" id="horario" name="horario" class="form-control" required>
+          <input type="time" id="horario" name="horario" class="form-control">
         </div>
           <div class="mb-3">
             <label for="data" class="form-label">Data Prevista de Entrega<b id="obrigatorio">*</b>:
-            <input type="date" id="data" name="data" class="form-control" required>
+            <input type="date" id="data" name="data" class="form-control" >
           </div>
-
-          <button type="submit" class="btn btn-primary" onclick="enviar()">Enviar</button>
+       
+          <button type="submit" class="btn btn-primary" onclick="enviar(event)">Enviar</button>
           <button type="reset" class="btn btn-secondary">Limpar</button>
           <p id="mensagemEnviar"></p>
             </fieldset>
