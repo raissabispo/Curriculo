@@ -16,7 +16,7 @@ function enviar() {
     let data = document.getElementById('data').value;
 
   
-    if (nome === '' || sobrenome === '' || telefone === '' || email === '' || mensagem === '' || lingua === '' || prototipo === '' || linguagens.length === 0 || !banco || turno === '' || horario === '' || data === '') {
+    if (nome === '' || sobrenome === '' || telefone === '' || email === '' || mensagem === '' || turno === ''|| data === ''){
       alert('Por favor, preencha todos os campos obrigatórios!');
       return false;
     }
@@ -25,4 +25,4 @@ function enviar() {
     setTimeout(function() {
       document.getElementById('mensagemEnviar').innerHTML = '';
   }, 5000);
-    }
+}

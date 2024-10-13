@@ -47,9 +47,7 @@
       <div class="row">
           <div class="col-sm-6" id="tituloApresentacao">
               <h1 class="display-4 fw-bold" id="tituloRaissa">Currículo Pessoal Raissa Vitória</h1>
-              <p>Projeto de Curriculo feito na disciplina de Coding.
-              </p>
-             
+            <p>Analista e desenvolvedora de sistemas</p>
           </div>
           <div class="col-sm-6 text-center">
               <img src="images/image.jpg" alt="" class="img-fluid">
@@ -186,40 +184,28 @@
     <form id="freelancerForm" enctype="multipart/form-data">
       <fieldset>
         <legend class="mb-4">Formulário de Freelancer</legend>
-
-        <!-- Nome -->
         <div class="mb-3">
-          <label for="nome" class="form-label">Nome*:</label>
+          <label for="nome" class="form-label">Nome<b>*</b>:</label>
           <input type="text" id="nome" name="nome" class="form-control" placeholder="Insira seu nome" required>
         </div>
-
-        <!-- Sobrenome -->
         <div class="mb-3">
-          <label for="sobrenome" class="form-label">Sobrenome*:</label>
+          <label for="sobrenome" class="form-label">Sobrenome<b>*</b>:</label>
           <input type="text" id="sobrenome" name="sobrenome" class="form-control" placeholder="Insira seu sobrenome" required>
         </div>
-
-        <!-- Telefone -->
         <div class="mb-3">
-          <label for="telefone" class="form-label">Telefone*:</label>
+          <label for="telefone" class="form-label">Telefone<b>*</b>:</label>
           <input type="text" id="telefone" name="telefone" class="form-control" placeholder="(99) 99999-9999" required>
         </div>
-
-        <!-- Email -->
         <div class="mb-3">
-          <label for="email" class="form-label">E-mail*:</label>
+          <label for="email" class="form-label">E-mail<b>*</b>:</label>
           <input type="email" id="email" name="email" class="form-control" placeholder="email@dominio.com" required>
         </div>
-
-        <!-- Mensagem -->
         <div class="mb-3">
-          <label for="mensagem" class="form-label">Mensagem*:</label>
+          <label for="mensagem" class="form-label">Mensagem<b>*</b>:</label>
           <textarea id="mensagem" name="mensagem" class="form-control" rows="4" placeholder="Informe o que deseja." required></textarea>
         </div>
-
-        <!-- Língua -->
         <div class="mb-3">
-          <label for="lingua" class="form-label">Língua*:</label>
+          <label for="lingua" class="form-label">Língua:</label>
           <select id="lingua" name="lingua" class="form-select" required>
             <option value="">Selecione uma língua</option>
             <option value="en">Inglês</option>
@@ -228,14 +214,12 @@
             <option value="pt-br">Português (pt-br)</option>
           </select>
         </div>
-         <!-- Protótipo -->
          <div class="mb-3">
-          <label for="prototipo" class="form-label">Protótipo (Requisitos)*:</label>
+          <label for="prototipo" class="form-label">Protótipo (Requisitos):</label>
           <input type="file" id="prototipo" name="prototipo" class="form-control" accept=".pdf,.doc,.docx,.jpeg,.jpg,.png" required>
         </div>
-       <!-- Linguagens Preferidas -->
-       <div class="mb-3">
-        <label for="linguagens" class="form-label">Linguagens Preferidas*:</label>
+      <div class="mb-3">
+        <label for="linguagens" class="form-label">Linguagens Preferidas:</label>
         <select id="linguagens" name="linguagens" class="form-select" multiple required>
           <option value="java">Java</option>
           <option value="c">C</option>
@@ -244,38 +228,36 @@
           <option value="python">Python</option>
         </select>
       </div>
-
-       <!-- Banco de Dados -->
-       <div class="mb-3">
-        <label class="form-label">Banco de Dados*:</label><br>
+      <div class="mb-3">
+        <label class="form-label">Banco de Dados:</label><br>
         <input type="radio" id="mysql" name="banco" value="MySQL" required>
         <label for="mysql">MySQL</label>
         <input type="radio" id="postgresql" name="banco" value="PostgreSQL" required>
         <label for="postgresql">PostgreSQL</label>
         <input type="radio" id="mongodb" name="banco" value="MongoDB" required>
         <label for="mongodb">MongoDB</label>
+        <input type="radio" id="N/A" name="banco" value="N/A" required>
+        <label for="N/A">N/A</label>
+        <input type="radio" id="outra" name="banco" value="outra" required>
+        <label for="outra">Outra</label>
       </div>
-
-      <!-- Turno para Reuniões -->
       <div class="mb-3">
-        <label for="turno" class="form-label">Turno de preferência para reuniões*:</label>
-        <select id="turno" name="turno" class="form-select" required>
-          <option value="">Selecione um turno</option>
-          <option value="manha">Manhã</option>
-          <option value="tarde">Tarde</option>
-          <option value="noite">Noite</option>
-        </select>
-      </div>
+        <label for="turno" class="form-label">Turno de preferência para reuniões <b>*</b>:<br>
+       <input type="checkbox" id="manha" name="turno" value="Manhã">
+      <label for="manha">Manhã</label><br>
 
-        <!-- Horário Sugerido -->
+     <input type="checkbox" id="tarde" name="turno" value="Tarde">
+     <label for="tarde">Tarde</label><br>
+
+     <input type="checkbox" id="noite" name="turno" value="Noite">
+      <label for="noite">Noite</label>
+      </div>
         <div class="mb-3">
-          <label for="horario" class="form-label">Horário Sugerido*:</label>
+          <label for="horario" class="form-label">Horário Sugerido:</label>
           <input type="time" id="horario" name="horario" class="form-control" required>
         </div>
-
-          <!-- Data Prevista de Entrega -->
           <div class="mb-3">
-            <label for="data" class="form-label">Data Prevista de Entrega*:</label>
+            <label for="data" class="form-label">Data Prevista de Entrega<b>*</b>:
             <input type="date" id="data" name="data" class="form-control" required>
           </div>
 

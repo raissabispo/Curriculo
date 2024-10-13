@@ -83,11 +83,16 @@ a:not(.btn):hover {
   padding: 15px; 
   margin-bottom: 20px; 
   background-color: var(--color-bg-div); 
-  color: #618dbb;
+  color: #2976c7;
   font-weight: 500;
 }
+
 
 #mensagemEnviar{
   margin: 3rem;
    font-size:20px;
+}
+
+b{
+  color: rgb(255, 73, 73);
 }
