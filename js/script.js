@@ -1,4 +1,4 @@
-function enviar(event) {
+function enviar() {
   event.preventDefault(); // Previne o envio padrão do formulário
 
   // Capturando valores dos campos
